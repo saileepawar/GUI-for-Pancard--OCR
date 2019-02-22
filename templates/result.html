@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head><title>Values of Form</title>
+   <center><style>
+      body {
+         background-color : #212f3d;
+         }
+      table{
+         align-content: center;
+         position: relative;
+           padding: 40px 65px;
+           color: #fff;
+           font-style:  bold 14px 
+           font-style: Arial, Helvetica;
+           text-transform: uppercase;
+           text-decoration: none;
+           display: inline-block;      
+           background-color: #72ce3f;
+           -moz-border-radius: 3px;
+           -webkit-border-radius: 3px;
+           border-radius: 3px;    
+           text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+           opacity: .9;       
+         }
+   </style>
+   </head>
+   <body>
+      <table border = 0.5 >
+         {% for key,value in result.items() %}
+            <tr>
+               <td> {{ key }} </td>
+               <td> {{ value }} </td>
+            </tr>
+         {% endfor %}
+      </table>
+   </body>
+</center>
+</html>
